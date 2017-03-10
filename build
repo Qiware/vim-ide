@@ -1,0 +1,10 @@
+#!/bin/sh
+
+cscope -Rbq
+find . -name "*.h" > cscope.files
+find . -name "*.c" >> cscope.files
+find . -name "*.go" >> cscope.files
+find . -name "*.cpp" >> cscope.files
+ctags  -L -< cscope.files
+
+rm -fr core.*
