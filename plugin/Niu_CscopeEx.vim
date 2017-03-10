@@ -31,7 +31,7 @@ function My_rebuild()
     call system("cscope -Rbkq -i cscope.files")
 
     " 更新CTAGS
-    call system("ctags -R")
+    call system("ctags -L -< cscope.files")
     cs reset
 endfunction
 command Rebuild call My_rebuild()
