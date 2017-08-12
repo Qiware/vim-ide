@@ -298,7 +298,7 @@ vnoremap <silent> # :<C-U>
     \gV:call setreg('"', old_reg, old_regtype)<CR>
 
 "nmap YY     :call setreg("+", getline(line(1), line("$")))<CR>:echo "Buffer Was Sended To Clipboard !"<CR>
-nmap YY     :call setreg("+", join(getline(line(1), line("$")), "\n"))<CR>
+"nmap YY     :call setreg("+", join(getline(line(1), line("$")), "\n"))<CR>
 hi normal ctermbg=0
 
 set t_Co=256 "开启8/16/256颜色支持
