@@ -304,3 +304,7 @@ hi normal ctermbg=0
 set t_Co=256 "开启8/16/256颜色支持
 "colorscheme evening
 colorscheme default
+
+call pathogen#infect()
+syntax on
+filetype plugin indent on
